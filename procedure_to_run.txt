@@ -37,12 +37,13 @@ This is exactly what happened on your Windows machine (C:\Users\Lenovo\curriculu
    → This means you’re now “inside” the venv.  
    Any `pip install` or `python` command now uses the isolated Python/pip from the `venv` folder — not your global one.
 
-   (You had a small PowerShell issue earlier because you were in PowerShell instead of cmd. We fixed it by using `.bat` or switching to Command Prompt.)
 
 4. **Installed required packages inside the venv**  
    Commands:
    ```
    pip install streamlit google-generativeai
+   pip install reportlab
+
    ```
 
    → These packages are now installed **only inside the venv** folder (you can see them in `venv\Lib\site-packages`).  
@@ -85,9 +86,3 @@ venv\Scripts\activate.bat
 streamlit run app.py
 ```
 
-That’s the entire virtual environment process you followed — very standard and correct for Python projects on Windows.
-
-If you ever forget any step, just remember:  
-**Always activate the venv first** (`activate.bat`) → then run `pip` or `streamlit`.
-
-Let me know if you want to add anything else (e.g. requirements.txt, git, deployment to Streamlit Cloud, etc.)! 😊
