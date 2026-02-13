@@ -1,2 +1,3 @@
 # CurricuForge
-an AI powered curriculam designer using Gemini
+an AI powered curriculam designer using Gemini api
+
